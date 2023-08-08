@@ -1,0 +1,67 @@
+<!-- Creating a Dynamic News Web-Page using HTML, CSS and JavaScript. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News WebPage</title>
+    <link rel="stylesheet" href="pr9.css">
+    <script src="https://kit.fontawesome.com/1ed4e18c42.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    
+    <nav>
+        <div class="navbar container flex">
+            <a href="#" onclick="reload()">
+                <img src="./logo.png" alt="Company Logo">
+            </a>
+
+            <div class="nav-links">
+                <ul class="flex">
+                    <li class="items hover-links" id="finance" onclick="navItemClick('finance')">Finance</li>
+                    <li class="items hover-links" id="politics" onclick="navItemClick('politics')">Politics</li>
+                    <li class="items hover-links" id="sports" onclick="navItemClick('sports')">Sports</li>
+                </ul>
+            </div>
+            <div class="search flex">
+                <input type="text" class="search-input" id="search-input" placeholder="Search News">
+                <button class="search-button hover-links" id="search-button">Search</button>
+            </div>
+        </div>
+    </nav>
+
+    <div id="top"></div>    <!-- just for accessing top of the page -->
+
+    <div>
+        <a href="#" id="up-arrow">
+            <i class="fa-solid fa-circle-up"></i>
+        </a>
+    </div>
+    
+    <main>
+        <div class="cards-container container flex" id="cards-container">
+            
+        </div>
+    </main>
+
+    
+    
+    <template id="template-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="Card-Image" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">This is Title</h3>
+                <h6 id="news-source" class="news-source">News Insiders 03/08/2023</h6>
+                <p id="news-desc" class="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, necessitatibus molestiae. Laboriosam!</p>
+            </div>
+        </div>
+    </template>
+
+    <script src="pr9.js"></script>
+    
+</body>
+</html>
