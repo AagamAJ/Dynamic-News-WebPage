@@ -29,7 +29,7 @@ Welcome to the Dynamic Online News Webpage project! This project is a dynamic ne
    cd NewsWebPage
    ```
 
-3. Open the `pr9NewsWebPage.html` file in a web browser to access the Dynamic Online News Webpage.
+3. Open the `home.html` file in a web browser to access the Dynamic Online News Webpage.
 
 ## Usage
 
